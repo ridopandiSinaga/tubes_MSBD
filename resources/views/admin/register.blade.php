@@ -7,23 +7,23 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Toanchet-Market') }}</title>
-    <link rel="shortcut icon" href="{{ URL::asset('admin/image/logo_icon.ico') }}">
+    <link rel="shortcut icon" href="{{asset('admin/image/logo_icon.ico') }}">
     <meta name="description" content="Toanchet-Market, join global market , Call : 010 500 313">
 
     <!-- Admin Page -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('admin/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{asset('../admin/plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{asset('../admin/dist/css/adminlte.min.css') }}">
 
     <!-- Select2 -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/plugins/select2/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{asset('../admin/plugins/select2/css/select2.min.css') }}">
     <link rel="stylesheet"
-        href="{{ URL::asset('admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
+        href="{{asset('admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
 
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{asset('../admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
 
     <!-- Combobox select -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/select/css/bootstrap-select.css') }}">
+    <link rel="stylesheet" href="{{asset('../admin/select/css/bootstrap-select.css') }}">
 
 
     <!-- Fonts -->
@@ -193,21 +193,21 @@
     <!-- REQUIRED SCRIPTS -->
 
     <!-- Admin Page SCRIPTS -->
-    <script type="text/javascript" src="{{ URL::asset('admin/plugins/jquery/jquery.min.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} ">
+    <script type="text/javascript" src="{{asset('../admin/plugins/jquery/jquery.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('../admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} ">
     </script>
-    <script type="text/javascript" src="{{ URL::asset('admin/dist/js/adminlte.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('../admin/dist/js/adminlte.min.js') }} "></script>
     <!-- ./wrapper -->
 
     <!-- Select2 -->
-    <script type="text/javascript" src="{{ URL::asset('admin/plugins/select2/js/select2.full.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('../admin/plugins/select2/js/select2.full.min.js') }} "></script>
 
     <!-- select for combobox -->
-    <script type="text/javascript" src="{{ URL::asset('admin/select/js/bootstrap-select.js') }} "></script>
+    <script type="text/javascript" src="{{asset('../admin/select/js/bootstrap-select.js') }} "></script>
 
-    <script type="text/javascript" src="{{ URL::asset('admin/alert/sweetalert2.all.min.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/alert/sweetalert2.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/alert/sweetalert2.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('./admin/alert/sweetalert2.all.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('../admin/alert/sweetalert2.js') }} "></script>
+    <script type="text/javascript" src="{{asset('../admin/alert/sweetalert2.min.js') }} "></script>
 
     <script type="text/javascript">
         $(function() {

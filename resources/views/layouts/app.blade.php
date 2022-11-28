@@ -5,33 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
-    <meta name="_token" content="{{ csrf_token() }}">
+    {{-- <meta name="_token" content="{{ csrf_token() }}">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
     <meta name="facebook-domain-verification" content="at5k4diviqkcx2zjknb5lq23ilwa0u" />
     <meta property="fb:pages" content="106214948192013" />
-    <meta name="description" content="Toanchet-Market, join global market , Call : 010 500 313">
+    <meta name="description" content="Toanchet-Market, join global market , Call : 010 500 313"> --}}
 
     <title>{{ config('app.name', 'Toanchet-Market') }}</title>
-    <link rel="shortcut icon" href="{{ URL::asset('admin/image/logo_icon.ico') }}">
-    
+    <link rel="shortcut icon" href="{{ asset('admin/image/logo_icon.ico') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Admin Page -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('admin/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css') }}">
 
     <!-- Select2 -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/plugins/select2/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/plugins/select2/css/select2.min.css') }}">
     <link rel="stylesheet"
-        href="{{ URL::asset('admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
+        href="{{ asset('admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
 
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
     <!-- Combobox select -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/select/css/bootstrap-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/select/css/bootstrap-select.css') }}">
 
-    <!-- Fonts -->
+    {{-- <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -101,20 +103,33 @@
     </div>
     <!-- ./wrapper -->
 
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/v4-shims.min.js" data-auto-replace-svg="nest"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <!-- Admin Page SCRIPTS -->
-    <script type="text/javascript" src="{{ URL::asset('admin/plugins/jquery/jquery.min.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/dist/js/adminlte.min.js') }} "></script>
+
+    <script type="text/javascript" src="{{ asset('admin/plugins/jquery/jquery.min.js') }} "></script>
+    <script type="text/javascript" src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
+    <script type="text/javascript" src="{{ asset('admin/dist/js/adminlte.min.js') }} "></script>
     <!-- ./wrapper -->
 
     <!-- Select2 -->
-    <script type="text/javascript" src="{{ URL::asset('admin/plugins/select2/js/select2.full.min.js') }} "></script>
+    <script type="text/javascript" src="{{ asset('admin/plugins/select2/js/select2.full.min.js') }} "></script>
 
     <!-- select for combobox -->
-    <script type="text/javascript" src="{{ URL::asset('admin/select/js/bootstrap-select.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/alert/sweetalert2.all.min.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/alert/sweetalert2.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/alert/sweetalert2.min.js') }} "></script>
+    {{-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
+    <script type="text/javascript" src="{{ asset('admin/select/js/bootstrap-select.js') }} "></script>
+    <script type="text/javascript" src="{{ asset('admin/alert/sweetalert2.all.min.js') }} "></script>
+    <script type="text/javascript" src="{{ asset('admin/alert/sweetalert2.js') }} "></script>
+    <script type="text/javascript" src="{{ asset('admin/alert/sweetalert2.min.js') }} "></script>
 
 </body>
 

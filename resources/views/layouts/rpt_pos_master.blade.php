@@ -7,19 +7,19 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
 
-    <link rel="shortcut icon" href="{{ URL::asset('images/icon.ico') }}">
+    <link rel="shortcut icon" href="{{asset('images/icon.ico') }}">
     <title>{{ Session::get('username') }}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Admin Page -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('admin/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{asset('admin/dist/css/adminlte.min.css') }}">
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
     <!-- Google Font: Source Sans Pro -->
 
     <!-- Combobox select -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/select/css/bootstrap-select.css') }}">
+    <link rel="stylesheet" href="{{asset('admin/select/css/bootstrap-select.css') }}">
 
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
@@ -31,7 +31,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <script type="text/javascript" src="{{ URL::asset('admin/report/exp_excel/saveAsExcel.js') }} "></script>
+    <script type="text/javascript" src="{{asset('admin/report/exp_excel/saveAsExcel.js') }} "></script>
 
 
 
@@ -85,16 +85,16 @@
     </div>
 
 
-    <script type="text/javascript" src="{{ URL::asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/dist/js/adminlte.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('admin/dist/js/adminlte.min.js') }} "></script>
     <!-- ./wrapper -->
     <!-- select for combobox -->
-    <script type="text/javascript" src="{{ URL::asset('admin/report/select/js/bootstrap-select.js') }} "></script>
+    <script type="text/javascript" src="{{asset('admin/report/select/js/bootstrap-select.js') }} "></script>
 
     <!-- sweetalert2 -->
-    <script type="text/javascript" src="{{ URL::asset('admin/report/alert/sweetalert2.all.min.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/report/alert/sweetalert2.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/report/alert/sweetalert2.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('admin/report/alert/sweetalert2.all.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('admin/report/alert/sweetalert2.js') }} "></script>
+    <script type="text/javascript" src="{{asset('admin/report/alert/sweetalert2.min.js') }} "></script>
 
     <script type="text/javascript">
         $(function() {

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+{{-- <html lang="en"> --}}
 
 <head>
     <meta charset="utf-8">
@@ -7,12 +8,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Toanchet-Market') }}</title>
-    <link rel="shortcut icon" href="{{ URL::asset('admin/image/logo_icon.ico') }}">
+    <link rel="shortcut icon" href="{{asset('admin/image/logo_icon.ico') }}">
     <meta name="description" content="Toanchet-Market, join global market , Call : 010 500 313">
-    
+
     <!-- Admin Page -->
-    <link rel="stylesheet" href="{{ URL::asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('admin/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{asset('admin/plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{asset('admin/dist/css/adminlte.min.css') }}">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -109,10 +110,10 @@
 
 
     <!-- Admin Page SCRIPTS -->
-    <script type="text/javascript" src="{{ URL::asset('admin/plugins/jquery/jquery.min.js') }} "></script>
-    <script type="text/javascript" src="{{ URL::asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} ">
+    <script type="text/javascript" src="{{asset('admin/plugins/jquery/jquery.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} ">
     </script>
-    <script type="text/javascript" src="{{ URL::asset('admin/dist/js/adminlte.min.js') }} "></script>
+    <script type="text/javascript" src="{{asset('admin/dist/js/adminlte.min.js') }} "></script>
 
     <!-- ./wrapper -->
 
